@@ -5,11 +5,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class PageController {
+public class HomeController {
 
     @RequestMapping("/")
     public String showTestPage(Model model){
-        model.addAttribute("name", "Maarten");
-        return "page";
+        return "home";
     }
 }
